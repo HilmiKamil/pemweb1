@@ -1,0 +1,113 @@
+body {
+    background-color: #f5f5dd;
+}
+
+#header {
+    background-color: #deb887;
+    text-align: center;
+    padding-bottom: 0.5%;
+    padding: 15px;
+}
+
+#header h1 {
+    color: #0e02f5;
+
+}
+
+blockquote {
+    background-color: yellow;
+    padding: 10px;
+}
+
+#soekarno {
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+#nav ul {
+    text-align: center;
+}
+
+#nav ul li {
+    display: inline-flex;
+    list-style: none;
+    margin: 5px;
+}
+
+.jawa {
+    font-weight: bold;
+}
+
+.gambar img {
+    border-radius: 5%;
+    width: 300px;
+    height: 300px;
+}
+
+.gambar {
+    text-align: center;
+
+}
+
+.isi {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.B {
+
+    font-size: 50px;
+    color: #0e02f5;
+}
+
+.koleksi img {
+    margin: 25px;
+    max-width: 15%;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.koleksi {
+    margin: 5%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    background-color: #deb887;
+    text-align: center;
+}
+
+.koleksi img:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+#Wa {
+    font-weight: bold;
+    color: #0e02f5;
+}
+
+.jak {
+    margin: 10px;
+    text-align: center;
+    color: red;
+}
+
+.promo {
+    border: 5px solid black;
+    padding: 20px;
+    margin: 5%;
+}
+
+.promo li a {
+    color: #212121;
+}
+
+.promo li {
+    list-style: none;
+}
+
+.promo a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    align-items: center;
+}
