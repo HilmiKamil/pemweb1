@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav {
+
+    width: 20vw;
+    height: 100vh;
+    background-color: pink;
+}
+
+header, footer {
+    background-color: khaki;
+    height: 20vh;
+    width: 80vw;
+}
+
+.content{
+    height: 60vh;
+    display: flex;
+}
+
+article{
+    flex-grow: 3;
+    display: flex;
+}
+
+aside{
+    background-color: aqua;
+    flex-grow: 1;
+    display: flex;
+}

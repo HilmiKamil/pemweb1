@@ -1,0 +1,21 @@
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#container img{
+    height: 40vh;
+    width: 32vw;
+}
+
+
+#container2{
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+#container2 img{
+    height: 40vh;
+    width: 19vw;
+}
