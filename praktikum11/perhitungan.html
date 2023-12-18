@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan Javascript</title>
+</head>
+<body>
+    <h3>Perjumlahan Javascript</h3>
+    <input type="number" name="" id="bil1" onkeyup="Perhitungan()">
+    <label for="plus">+</label>
+    <input type="number" name="" id="bil2" onkeyup="Perhitungan()">
+    <label for="">=</label>
+    <input type="number" name="" id="hasilPerhitungan">
+
+    <script>
+        function Perhitungan(){
+        let perhitungan1 = document.getElementById("bil1").value;
+        let perhitungan2 = document.getElementById("bil2").value;
+        let penjumlahanInt1 = parseInt(perhitungan1);
+        let penjumlahanInt2 = parseInt(perhitungan2);
+        console.log(penjumlahanInt1); 
+        console.log(penjumlahanInt2); 
+
+        let perhit = penjumlahanInt1 + penjumlahanInt2
+
+        let hasilPerhitungan = document.querySelector("#hasilPerhitungan")
+
+        hasilPerhitungan.value = perhit;
+
+
+        }
+    </script>
+</body>
+</html>
