@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Image</title>
+</head>
+<body>
+    <h1>Anime Image Picker</h1>
+    <select name="option" id="option" onchange="image_picker()">
+        <option value="naruto">Naruto</option>
+        <option value="shangirila">Shangiri-La</option>
+        <option value="bleach">Bleach</option>
+        <option value="goku">Dragon Ball</option>
+        <option value="fate">Fate Series</option>
+    </select>
+
+    <br><br>
+
+    <div class="container">
+        <img id="gambar" width="500px">
+    </div>
+
+    <script>
+        let isImageChanged = false;
+
+        function image_picker(){
+            const list_gambar = ["naruto.jpg", "shangri.jpeg", "bleach.jpeg", "goku.jpg", "fate.png"];
+            let pilihan = document.getElementById("option").value;
+            let path = "img/";
+
+            if(pilihan == "naruto"){
+                let select = list_gambar[0];
+                document.getElementById("gambar").src = path + select;
+                showImageAlert(select);
+            }
+
+            if(pilihan == "shangirila"){
+                let select = list_gambar[1];
+                document.getElementById("gambar").src = path + select;
+                showImageAlert(select);
+            }
+
+            if(pilihan == "bleach"){
+                let select = list_gambar[2];
+                document.getElementById("gambar").src = path + select;
+                showImageAlert(select);
+            }
+
+            if(pilihan == "goku"){
+                let select = list_gambar[3];
+                document.getElementById("gambar").src = path + select;
+                showImageAlert(select);
+            }
+
+            if(pilihan == "fate"){
+                let select = list_gambar[4];
+                document.getElementById("gambar").src = path + select;
+                showImageAlert(select);
+            }
+        }
+
+        function showImageAlert(select) {
+            if (!isImageChanged) {
+                isImageChanged = true;
+                setTimeout(() => {
+                    alert("Ini gambar " + select);
+                    isImageChanged = false;
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>

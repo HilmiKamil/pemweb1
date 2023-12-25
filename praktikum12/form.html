@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Javascript</title>
+</head>
+<body>
+    <h3>Form Javascript</h3>
+    <div style="border: 1px solid black; padding: 5px;">
+    <form action="" method="get" name="myForm">
+    <div>
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="fname">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <br>
+    <div>
+        <label for="jberangkat">Jam Keberangkatan :</label>
+        <input type="time" id="jberangkat" name="jberangkat">
+    </div>
+    <br>
+    <div>
+        <label for="tberangkat">Tujuan Keberangkatan :</label>
+        <input type="text" id="tberangkat" name="tberangkat">
+    </div>
+    <br>
+    <div>
+        <label for="ticket">Jumlah Tiket :</label>
+        <input type="number" id="ticket" name="tiket">
+    </div>
+    <button type="button" name="Submit" onclick="validateForm()">Submit</button>
+</form>
+</div>
+
+    <p>Username : <span id="hasilUser"></span></p>
+    <p>Email : <span id="hasilEmail"></span></p>
+    <p>Jam Keberangkatan : <span id="hasilJam"></span></p>
+    <p>Tujuan Keberangkatan : <span id="hasilTujuan"></span></p>
+    <p>Jumlah Tiket : <span id="hasilTiket"></span></p>
+
+    <div id="error"></div>
+
+<script src="form.js"></script>
+
+
+</body>
+</html>
